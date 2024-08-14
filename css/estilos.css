@@ -1,0 +1,1053 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*portada y navegacion*/
+.portada {
+  background-size: cover;
+  height: 100vh;
+  background-position: center, bottom;
+  background-attachment: scroll, fixed;
+  background-repeat: no-repeat;
+  height: 600px, 1000px;
+}
+
+.portada-index {
+  background-image: url(../imagenes/montanas.png),
+    url(../imagenes/ushuaia-index.jpg);
+  background-position: center, bottom;
+  background-attachment: scroll, fixed;
+  background-repeat: no-repeat;
+  height: 600px, 1000px;
+}
+
+.portada-contacto {
+  background-image: url(../imagenes/montanas.png),
+    url(../imagenes/contacto-banner.jpg);
+}
+
+.portada-actividades {
+  background-image: url(../imagenes/montanas.png),
+    url(../imagenes/actividades-banner.jpg);
+}
+
+.portada-sobreUshuaia {
+  background-image: url(../imagenes/montanas.png),
+    url(../imagenes/sobreUshuaia-banner.jpg);
+}
+
+li,
+a,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: rgba(0, 0, 86, 0.4);
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.navegacion {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navegacion li {
+  margin: 0 10px;
+}
+
+.navegacion a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.icono {
+  width: 60px;
+}
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+}
+.menu-toggle.active .bar:nth-child(1) {
+  transform: rotate(45deg);
+  top: 43px !important;
+  position: absolute;
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+  opacity: 0; /* Hide the middle bar */
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+  transform: rotate(-45deg);
+  top: -8px; /* Adjust this to align properly */
+}
+.logo {
+  cursor: pointer;
+  margin-right: auto;
+  width: 60px;
+}
+
+.navegacion {
+  list-style: none;
+}
+
+.navegacion li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.navegacion li a {
+  transition: all 0.3s ease 0s;
+}
+
+.navegacion li a:hover {
+  color: #f70759;
+}
+
+.boton {
+  padding: 9px 25px;
+  background-color: #f70759;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-left: 20px;
+}
+
+.boton:hover {
+  background: #fff;
+  border: 2px solid #00264c;
+  color: #00264c;
+}
+
+button {
+  padding: 20px 50px;
+  background-color: #f70759;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-left: 20px;
+}
+
+.titulo {
+  width: 90%;
+  color: #fff;
+  top: 400px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.titulo h1 {
+  font-family: "Arca Majora 3", sans-serif;
+  font-size: 62px;
+}
+
+.titulo p {
+  margin: 10px 0 40px;
+  font-size: 20px;
+  color: #fff;
+}
+
+/*cierre portada*/
+
+/* visitar ushuaia*/
+.visita {
+  padding: 50px;
+  display: flex;
+  transition: 200ms ease-in-out;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  margin-left: -40px;
+  background: linear-gradient(rgba(0, 10, 89, 0.5), rgba(0, 10, 89, 0.5)),
+    url(../imagenes/fondo-sobreUshuaia.jpg);
+}
+
+.ush-porque {
+  padding: 30px 10px 30px 20px;
+  margin-left: 100px;
+  margin-top: 70px;
+  margin-right: -100px;
+  margin-bottom: -100px;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.7);
+}
+
+.fondo {
+  background-image: url(../imagenes/faro.png), url(../imagenes/faro.png);
+  background-repeat: no-repeat;
+  background-position: right, left;
+}
+
+#visitarUshuaia {
+  width: 800px;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+h2 {
+  font-size: 36px;
+
+  font-weight: 600;
+  font-family: "Arca Majora 3", sans-serif !important;
+}
+
+.titulo-porque {
+  color: #f70759;
+}
+
+p {
+  color: black;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+.texto {
+  padding: 50px 10px;
+}
+
+.texto p {
+  font-size: 18px;
+  color: black;
+}
+
+.columna {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+h3 {
+  text-align: center;
+  margin: auto;
+  color: #d3d3d3;
+  padding: 20px;
+  font-family: "Arca Majora 3", sans-serif !important;
+}
+
+/*lugares para visitar*/
+.fondo-lugares {
+  background: linear-gradient(rgba(236, 10, 89, 0.5), rgba(236, 10, 89, 0.4));
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 100px;
+}
+
+.lugares {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+
+.texto-color {
+  color: #fff;
+  padding-top: 30px;
+  font-size: 17px;
+}
+
+.titulo-color {
+  color: white;
+}
+
+.img-lugares {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  width: fit-content;
+  margin-left: 10px;
+}
+
+.img-lugares img {
+  width: 100%;
+  display: block;
+}
+
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 200ms ease-in-out;
+}
+
+.layer:hover {
+  background: #f70759;
+}
+
+.layer h3 {
+  width: 100%;
+  font-weight: 500;
+  color: #fff;
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+}
+
+.layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+}
+
+/*cierre lugares para visitar*/
+
+ul,
+li {
+  list-style: none;
+}
+
+/*actividades*/
+.actividades {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.actividades-col {
+  flex-basis: 31%;
+  border-radius: 4px;
+  margin-bottom: 5%;
+  text-align: left;
+  padding: 20px;
+}
+
+.actividades-col:hover {
+  background: linear-gradient(rgba(207, 94, 160, 0.1), rgba(233, 75, 167, 0.5));
+}
+
+.actividades-col img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.actividades-col p {
+  padding: 0;
+}
+
+.actividades-col h3 {
+  text-align: left;
+  margin-top: 16px;
+  color: #f70759;
+  padding-left: 0;
+  margin-bottom: 15px;
+}
+
+/*cierre actividades*/
+.titulo-reserva {
+  text-align: center;
+  color: #fff;
+  margin: 80px 0 60px 0;
+}
+
+/*formulario*/
+#Reserva {
+  padding-top: 130px;
+}
+
+#Reserva .reserva-caja {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 80px;
+  width: 1000px;
+  display: block;
+  margin: 0 auto;
+  padding: 20px 80px 100px 80px;
+  background: linear-gradient(rgba(7, 26, 177, 0.5), rgba(44, 62, 204, 0.3)),
+    url(../imagenes/fondoreserva.jpg);
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  background-size: cover;
+}
+
+form {
+  background: #f70759;
+  display: flex;
+  flex-direction: column;
+  padding: 80px;
+  border-radius: 20px;
+  align-items: center;
+
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.7);
+}
+
+label {
+  color: #00264c;
+  font-family: "Arca Majora 3", sans-serif;
+}
+
+input {
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+  transition: 200ms ease-in-out;
+}
+
+input:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+select {
+  border-radius: 30px;
+  padding: 15px;
+  border: none;
+  transition: 200ms ease-in-out;
+}
+
+select:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+.numero {
+  width: 30px;
+}
+
+.separacion {
+  margin: 20px;
+}
+
+.boton-form {
+  color: #fff;
+  background: #00264c;
+  font-family: "Arca Majora 3", sans-serif;
+  padding: 20px 50px;
+  font-size: 18px;
+  border-radius: 20px;
+  transition: 200ms ease-in-out;
+}
+
+.boton-form:hover {
+  color: #f70759;
+  background: #fff;
+}
+
+/*footer*/
+footer {
+  margin-top: 0px;
+  background: url(../imagenes/footer-fondo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  align-items: flex-end;
+  border-bottom: 30px solid #00264c;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.caja-footer {
+  margin-top: 100px;
+}
+
+.footer-info {
+  color: #f70759 !important;
+  font-size: 25px;
+}
+
+.iconos {
+  background: #00264c;
+  display: flex;
+  border-bottom: 50px solid #00264c;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.redesSociales a:nth-child(1) {
+  background-image: url(../imagenes/twitter.png);
+  background-size: 40px;
+  background-repeat: no-repeat;
+  padding-bottom: 20px;
+  color: transparent;
+  background-position: center;
+}
+
+.redesSociales a:nth-child(1):hover {
+  background-image: url(../imagenes/twitterblanco.png);
+}
+
+.redesSociales a:nth-child(2) {
+  background-image: url(../imagenes/facebook.png);
+  background-size: 40px;
+  background-repeat: no-repeat;
+  padding-bottom: 20px;
+  color: transparent;
+  background-position: center;
+}
+
+.redesSociales a:nth-child(2):hover {
+  background-image: url(../imagenes/facebookblanco.png);
+}
+
+.redesSociales a:nth-child(3) {
+  background-image: url(../imagenes/youtube.png);
+  background-size: 40px;
+  background-repeat: no-repeat;
+  padding-bottom: 20px;
+  color: transparent;
+  background-position: center;
+}
+
+.redesSociales a:nth-child(3):hover {
+  background-image: url(../imagenes/youtubeblanco.png);
+}
+
+.redesSociales a:nth-child(4) {
+  background-image: url(../imagenes/instagram.png);
+  background-size: 40px;
+  background-repeat: no-repeat;
+  padding-bottom: 20px;
+  color: transparent;
+  background-position: center;
+}
+
+.redesSociales a:nth-child(4):hover {
+  background-image: url(../imagenes/instagramblanco.png);
+}
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  color: #f70759;
+}
+
+/*contacto*/
+#formulario-contacto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  flex-direction: column;
+}
+
+#formulario-contacto h3 {
+  font-family: "Montserrat", sans-serif !important;
+  color: #00264c;
+}
+
+#formulario-contacto h2 {
+  padding-bottom: 30px;
+}
+
+.mail-form {
+  width: 500px;
+}
+
+.contacto-caja {
+  width: 800px;
+}
+
+textarea {
+  width: 500px;
+  border-radius: 30px;
+  padding-left: 50px;
+  padding-top: 15px;
+  transition: 200ms ease-in-out;
+}
+
+textarea:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+.campo:focus {
+  outline: 2px solid #f70759;
+  outline-offset: 2px;
+}
+
+.campo:required {
+  background-color: #fff;
+}
+
+.campo:focus:invalid {
+  background-color: #fa6f9f;
+}
+
+#encontranos {
+  background: #fa6f9f;
+  border-radius: 50px 0 50px 0;
+  padding-bottom: 80px;
+  margin-bottom: 50px;
+}
+
+#encontranos h2 {
+  margin-top: 50px;
+  text-align: center;
+  color: #fff;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+#encontranos h3 {
+  margin-bottom: 150px;
+  font-family: "Montserrat", sans-serif !important;
+  color: #00264c;
+}
+
+#encontranos .informacion-contacto a {
+  margin-top: 20px;
+  display: block;
+  margin-right: 150px;
+  padding-left: 30px;
+}
+
+.informacion-contacto {
+  display: flex;
+  justify-content: center;
+}
+
+#encontranos .fondo-columna {
+  background-color: #f70759;
+  border-radius: 20px;
+  border-right: 60px solid #f70759;
+  border-bottom: 50px solid #f70759;
+  margin-bottom: 100px;
+  border-left: 0;
+}
+
+#encontranos .columna-img {
+  margin-right: 60px;
+  margin-bottom: 70px;
+  margin-left: -100px;
+  margin-top: -100px;
+  border-radius: 20px;
+}
+
+#encontranos .columna-img:hover {
+  box-shadow: 0 0 20px #000;
+}
+
+#encontranos .informacion-contacto a:nth-child(1) {
+  background: url(../imagenes/mail.png);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: centerleft;
+}
+
+#encontranos .informacion-contacto a:nth-child(3) {
+  background: url(../imagenes/direccion.png);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
+#encontranos .informacion-contacto a:nth-child(5) {
+  background: url(../imagenes/telefono.png);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
+/*sobre Ushuaia*/
+#sobrelaCiudad {
+  display: flex;
+  justify-content: center;
+}
+
+#sobrelaCiudad p {
+  width: 530px;
+}
+
+.sobreUshuaia-caja {
+  margin-top: 50px;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.columna-caja {
+  padding-left: 80px;
+  margin-left: 80px;
+  text-align: left;
+}
+
+.columna-caja h3 {
+  text-align: left;
+  color: #f70759;
+  padding: 0px;
+  font-size: 30px;
+}
+
+.columna-caja h4 {
+  color: #00264c;
+  font-size: 18px;
+  padding-bottom: 10px;
+  font-family: "Arca Majora 3", sans-serif;
+}
+
+.columna-img img {
+  border-radius: 20px;
+}
+
+.fondo-columna {
+  background-color: #fa6f9f;
+  border-radius: 20px;
+  border-bottom: 50px solid #fa6f9f;
+  margin-bottom: 100px;
+}
+
+.columna-img {
+  margin-left: 60px;
+  margin-top: 70px;
+  margin-right: -25px;
+  margin-bottom: -100px;
+  border-radius: 20px;
+  background: #fa6f9f;
+}
+
+#presidio {
+  display: flex;
+  justify-content: center;
+}
+
+#presidio .columna-caja {
+  margin-right: 50px;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+#fundacion {
+  background: linear-gradient(rgba(60, 0, 84, 0.7), rgba(60, 0, 84, 0.7)),
+    url(../imagenes/fondofundacion.jpg);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-repeat: repeat;
+  display: flex;
+  justify-content: center;
+}
+
+#fundacion h3 {
+  color: #fff;
+  padding: 0px;
+  font-size: 30px;
+}
+
+#fundacion h4 {
+  color: #fa6f9f;
+  font-size: 18px;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  font-family: "Arca Majora 3", sans-serif;
+  text-align: center;
+}
+
+#fundacion p {
+  color: #fff;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.contenido {
+  width: 1000px;
+}
+
+#noticias {
+  padding-bottom: 50px;
+  padding-top: 50px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#noticias h2 {
+  text-align: center;
+  color: #f70759;
+  margin-bottom: 20px;
+}
+
+#noticias h3 {
+  color: #fa6f9f;
+  text-align: center;
+  margin: 5px 15px;
+}
+
+.contenedor-noticias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenido-noticias {
+  border: 2px solid #f70759;
+  margin-bottom: 1rem;
+  background: #fff;
+  height: 500px;
+  display: flex;
+  margin-left: 15px;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  border-radius: 20px;
+}
+
+.contenido-noticias p {
+  width: 300px;
+  color: #000;
+  padding-top: 15px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/*atractivos*/
+#actividades {
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -20px;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  margin-bottom: 50px;
+}
+
+#actividades h2 {
+  text-align: center;
+  color: #00264c;
+  font-size: 45px;
+}
+
+#actividades h3 {
+  color: #f70759;
+  font-size: 18px;
+  text-align: center;
+}
+
+.columna-actividades {
+  display: flex;
+  margin-top: 20px;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 35px;
+  /* margin-left: 500px; */
+  /* margin-right: 500px; */
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.columna-actividades ul li {
+  width: 300px;
+  padding-top: 20px;
+  color: #000;
+}
+
+.caja-actividades {
+  margin-right: 20px;
+  margin-bottom: 2rem;
+  background-color: #edf0f1;
+  padding: 20px 0px 0px 0px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fondo-video {
+  background-image: url(../imagenes/faro.png), url(../imagenes/faro.png);
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, no-repeat;
+  padding: 15px;
+}
+
+.botones-actividades {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  justify-content: space-evenly;
+}
+
+.botones-actividades a {
+  padding: 30px 40px;
+  border-radius: 10px 10px 30px 30px;
+}
+
+.caja-actividades button {
+  margin-top: 20px;
+  margin-left: 0px;
+  border-radius: 30px 30px 10px 10px;
+  width: 400px;
+}
+
+#actividades img {
+  border-radius: 20px;
+}
+
+#actividades img:hover {
+  cursor: pointer;
+}
+
+iframe {
+  margin: 0 auto;
+  display: block;
+  border-radius: 20px;
+  width: 600px;
+  height: 400px;
+  margin-top: 50px;
+}
+
+.info-mia {
+  background: #00264c;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  color: #edf0f1;
+}
+
+@media screen and (max-width: 800px) {
+}
+
+@media (max-width: 768px) {
+  .columna-img {
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    border-radius: 20px;
+    background: transparent;
+  }
+  .contenedor-noticias {
+    flex-direction: column;
+  }
+  .fondo-columna {
+    margin-top: 20px;
+    border-left: 0px solid #fa6f9f;
+    border-bottom: 2px solid #fa6f9f;
+    margin-bottom: 10px;
+  }
+  .sobreUshuaia-caja {
+    flex-direction: column;
+    width: 80%;
+  }
+  .columna-caja {
+    padding-left: 10px;
+    margin-left: 10px;
+  }
+  footer {
+    flex-direction: column;
+  }
+
+  .caja-footer {
+    margin-top: 0px;
+  }
+  #visitarUshuaia {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+  }
+  .visita {
+    padding: 50px;
+    display: flex;
+    transition: 200ms ease-in-out;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    margin-left: 0px;
+    background: linear-gradient(rgba(0, 10, 89, 0.5), rgba(0, 10, 89, 0.5)),
+      url(../imagenes/fondo-sobreUshuaia.jpg);
+  }
+  #Reserva .reserva-caja {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 80px;
+    width: 85%;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(rgba(7, 26, 177, 0.5), rgba(44, 62, 204, 0.3)),
+      url(../imagenes/fondoreserva.jpg);
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    background-size: cover;
+  }
+  .columna {
+    flex-direction: column;
+  }
+  .ush-porque {
+    padding: 30px 10px 30px 20px;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.7);
+  }
+  .navegacion {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    padding: 1rem;
+    top: 0px;
+    left: 0;
+    background-color: #030b27e9;
+  }
+
+  .navegacion.active {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .navegacion li {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .menu-toggle {
+    z-index: 111111;
+    display: flex;
+  }
+}

@@ -1,0 +1,5 @@
+Alumna: Rocio Diaz Ramos.
+Comisión: DWM1B.
+Probe el sitio que el codigo estuviese correcto usando el Validator (https://validator.w3.org), mediante en navegador de GoogleChrome, y MicrosoftEdge.
+A este proyecto le dedique aproximadamente 25 horas en total.
+- Gracias.
